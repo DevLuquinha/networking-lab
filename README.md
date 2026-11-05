@@ -1,6 +1,6 @@
 # Estudos de Redes
 
-Plano prático de Redes para quem desenvolve backend e quer construir fundamentos úteis em Linux, infraestrutura, cloud e cybersecurity. O estudo parte de uma [LAN já montada no Cisco Packet Tracer](labs/01-company-lan/assignment.md) e avança por experimentos menores, análise de tráfego e diagnóstico.
+Plano prático de Redes para quem desenvolve backend e quer construir fundamentos úteis em Linux, infraestrutura, cloud e cybersecurity. O estudo parte de uma [LAN já montada no Cisco Packet Tracer](labs/01-company-lan/assignment.md) e avança por projetos, experimentos menores, análise de tráfego e diagnóstico.
 
 Este repositório guarda o plano e as evidências de aprendizado. Não há agenda por dias: o avanço depende de conseguir explicar, observar e diagnosticar cada assunto.
 
@@ -8,7 +8,7 @@ Este repositório guarda o plano e as evidências de aprendizado. Não há agend
 
 1. Leia o [roadmap](docs/roadmap.md) para entender a ordem e os critérios de avanço.
 2. Escolha no [método de estudo](docs/study-method.md) se quer começar o módulo com pesquisa guiada ou seguir para a explicação e o laboratório.
-3. Revise o [Lab 01](labs/01-company-lan/assignment.md) como ponto de partida. Depois, faça o [Lab 02: Ethernet e ARP](labs/02-ethernet-arp/assignment.md) e o [Lab 03: sub-redes IPv4](labs/03-ipv4-subnets/assignment.md).
+3. A próxima atividade é o [Lab 02: interligação WAN Uberaba–Sacramento](labs/02-company-wan/assignment.md), que amplia o [Lab 01](labs/01-company-lan/assignment.md). Siga o [roteiro em etapas](labs/02-company-wan/study-path.md) e use os Labs [03: Ethernet e ARP](labs/03-ethernet-arp/assignment.md) e [04: sub-redes IPv4](labs/04-ipv4-subnets/assignment.md) como apoio quando surgir uma dúvida desses fundamentos.
 4. Registre descobertas, dúvidas e evidências em [progresso](docs/progress.md). O registro representa o que você confirmou.
 
 ## Como os labs funcionam

@@ -11,6 +11,8 @@ Abra uma conversa para um módulo ou laboratório importante. Informe o módulo,
 
 Você pode mudar de entrada quando surgir uma dúvida. O objetivo da pesquisa é construir uma explicação sua.
 
+Um trabalho de aula pode passar à frente da sequência de fundamentos. Nesse caso, estude os pré-requisitos necessários dentro das etapas do projeto e volte aos labs menores quando eles ajudarem a esclarecer uma dificuldade. O [trabalho WAN](../labs/02-company-wan/study-path.md) usa esse formato.
+
 ## Durante o lab
 
 Use este ciclo curto:
