@@ -5,7 +5,7 @@ Este registro pertence ao estudante. Use **não iniciado**, **em estudo**, **apl
 | Módulo | Estado | Evidência ou explicação sua | Dúvida / próximo passo |
 |---|---|---|---|
 | 0. LAN inicial | Aplicado anteriormente | [Topologia no Packet Tracer](../labs/01-company-lan/coisa-qualquer.pkt); enunciado em [Lab 01](../labs/01-company-lan/assignment.md). | Revisitar os fluxos internos ao estudar cada camada. |
-| Projeto atual: WAN Uberaba–Sacramento | Não iniciado | Enunciado do [Lab 02](../labs/02-company-wan/assignment.md). Nenhuma configuração verificada ainda. | Conferir o inventário e os endereços do Lab 01; depois planejar o endereçamento da WAN. |
+| Projeto WAN Uberaba–Sacramento | Aplicado | [Lab 02 no Packet Tracer](../labs/02-company-wan/coisa-qualquer-wan.pkt) e [evidências](../labs/02-company-wan/notes.md): DHCP na filial, enlace serial, rotas, pings entre LANs, DNS e HTTP. HTTPS funcionou segundo relato do estudante. | Revisitar o caminho completo da requisição e resposta Web e observar HTTPS/TLS em uma sessão futura. |
 | 1. Ethernet e ARP | Não iniciado | — | [Lab 03](../labs/03-ethernet-arp/assignment.md), quando for útil ao projeto. |
 | 2. IPv4 e sub-redes | Não iniciado | — | [Lab 04](../labs/04-ipv4-subnets/assignment.md), quando for útil ao projeto. |
 | 3. Gateway, roteamento, VLANs e NAT | Não iniciado | — | — |
