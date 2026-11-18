@@ -1,4 +1,4 @@
-# Lab 03 — Ethernet, switch e ARP
+# Lab 04 — Ethernet, switch e ARP
 
 ## Pergunta do laboratório
 

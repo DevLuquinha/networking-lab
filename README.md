@@ -8,8 +8,9 @@ Este repositório guarda o plano e as evidências de aprendizado. Não há agend
 
 1. Leia o [roadmap](docs/roadmap.md) para entender a ordem e os critérios de avanço.
 2. Escolha no [método de estudo](docs/study-method.md) se quer começar o módulo com pesquisa guiada ou seguir para a explicação e o laboratório.
-3. A próxima atividade é o [Lab 02: interligação WAN Uberaba–Sacramento](labs/02-company-wan/assignment.md), que amplia o [Lab 01](labs/01-company-lan/assignment.md). Siga o [roteiro em etapas](labs/02-company-wan/study-path.md) e use os Labs [03: Ethernet e ARP](labs/03-ethernet-arp/assignment.md) e [04: sub-redes IPv4](labs/04-ipv4-subnets/assignment.md) como apoio quando surgir uma dúvida desses fundamentos.
-4. Registre descobertas, dúvidas e evidências em [progresso](docs/progress.md). O registro representa o que você confirmou.
+3. A sequência inicial é [Lab 01: LAN](labs/01-company-lan/assignment.md), [Lab 02: WAN Uberaba–Sacramento](labs/02-company-wan/assignment.md) e [Lab 03: ISP preparatório para a prova prática](labs/03-isp-practical/assignment.md). Os dois primeiros já foram aplicados; a atividade atual é o ISP.
+4. Depois dos três projetos, aprofunde os fundamentos com o [Lab 04: Ethernet e ARP](labs/04-ethernet-arp/assignment.md), o [Lab 05: sub-redes IPv4](labs/05-ipv4-subnets/assignment.md) e os módulos do roadmap.
+5. Registre descobertas, dúvidas e evidências em [progresso](docs/progress.md). O registro representa o que você confirmou.
 
 ## Como os labs funcionam
 

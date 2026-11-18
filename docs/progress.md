@@ -6,8 +6,9 @@ Este registro pertence ao estudante. Use **não iniciado**, **em estudo**, **apl
 |---|---|---|---|
 | 0. LAN inicial | Aplicado anteriormente | [Topologia no Packet Tracer](../labs/01-company-lan/coisa-qualquer.pkt); enunciado em [Lab 01](../labs/01-company-lan/assignment.md). | Revisitar os fluxos internos ao estudar cada camada. |
 | Projeto WAN Uberaba–Sacramento | Aplicado | [Lab 02 no Packet Tracer](../labs/02-company-wan/coisa-qualquer-wan.pkt) e [evidências](../labs/02-company-wan/notes.md): DHCP na filial, enlace serial, rotas, pings entre LANs, DNS e HTTP. HTTPS funcionou segundo relato do estudante. | Revisitar o caminho completo da requisição e resposta Web e observar HTTPS/TLS em uma sessão futura. |
-| 1. Ethernet e ARP | Não iniciado | — | [Lab 03](../labs/03-ethernet-arp/assignment.md), quando for útil ao projeto. |
-| 2. IPv4 e sub-redes | Não iniciado | — | [Lab 04](../labs/04-ipv4-subnets/assignment.md), quando for útil ao projeto. |
+| Projeto ISP preparatório | Em estudo | [Lab 03](../labs/03-isp-practical/assignment.md): enunciado e videoaula analisados; inventário inicial e ambiguidades registrados em [notas](../labs/03-isp-practical/notes.md). Nenhuma topologia ou teste do ISP foi concluído ainda. | Resolver a sobreposição de `192.168.10.0/24` e planejar endereços antes de interligar os clientes. |
+| 1. Ethernet e ARP | Não iniciado | — | [Lab 04](../labs/04-ethernet-arp/assignment.md), quando for útil ao projeto. |
+| 2. IPv4 e sub-redes | Não iniciado | — | [Lab 05](../labs/05-ipv4-subnets/assignment.md), quando for útil ao projeto. |
 | 3. Gateway, roteamento, VLANs e NAT | Não iniciado | — | — |
 | 4. TCP, UDP e portas | Não iniciado | — | — |
 | 5. DHCP, DNS, HTTP e TLS | Não iniciado | — | — |

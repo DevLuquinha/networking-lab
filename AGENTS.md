@@ -9,7 +9,7 @@ Este repositório é um ambiente de aprendizagem. O estudante desenvolve backend
 - Separe observação, hipótese e conclusão. Peça evidências relevantes, como endereços, rotas, saídas de comandos e eventos ou pacotes capturados. Não afirme que um teste passou sem evidência.
 - Distinga o que o Packet Tracer simula do que foi observado em Linux ou em uma rede real. Investigue diferenças entre ferramentas.
 - Trabalhe com o objetivo e o nível de profundidade do módulo atual. Use `docs/progress.md` para retomar dúvidas e objetivos, sem presumir domínio de um assunto só porque um lab foi executado.
-- A atividade atual é `labs/02-company-wan/assignment.md`; siga `labs/02-company-wan/study-path.md` uma etapa por vez. Na primeira etapa, use um inventário textual; não exija que o estudante desenhe um diagrama.
+- A sequência inicial é Lab 01 (LAN), Lab 02 (WAN) e Lab 03 (ISP preparatório). A atividade atual é `labs/03-isp-practical/assignment.md`; siga `labs/03-isp-practical/study-path.md` uma etapa por vez. Na primeira etapa, use um inventário textual; não exija que o estudante desenhe um diagrama. Depois desses três projetos, aprofunde os fundamentos nos Labs 04 e 05 e nos módulos do roadmap.
 
 ## Pesquisa guiada e prática
 

@@ -12,7 +12,7 @@ Avance **uma etapa por vez** com o mentor. Antes de cada etapa, você pode pedir
 | 6. Validar DNS e Web | Confirmar que o DHCP da filial entrega o endereço do DNS da matriz. Testar resolução de nome antes de abrir HTTP/HTTPS; separar falha de IP, DNS e aplicação. | Nome resolve para o Web correto e a página abre da filial; resultados registrados por departamento. |
 | 7. Explicar e entregar | Revisar testes de todos os departamentos, salvar o `.pkt` e descrever o trajeto de uma consulta DNS e de uma requisição Web, inclusive a resposta. | Matriz de evidências completa, topologia salva e explicação própria do caminho dos pacotes. |
 
-Os Labs [03: Ethernet e ARP](../03-ethernet-arp/assignment.md) e [04: sub-redes IPv4](../04-ipv4-subnets/assignment.md) são exercícios de apoio se ARP, máscara ou sub-rede dificultarem alguma etapa. O projeto WAN pode começar antes de concluí-los; a teoria necessária entra no momento em que for usada.
+Os Labs [04: Ethernet e ARP](../04-ethernet-arp/assignment.md) e [05: sub-redes IPv4](../05-ipv4-subnets/assignment.md) aprofundam esses fundamentos após os três projetos iniciais. A teoria necessária pode ser retomada no momento em que for usada.
 
 ## Como começar a Etapa 1
 

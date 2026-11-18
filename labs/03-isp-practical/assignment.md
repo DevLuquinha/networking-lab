@@ -1,0 +1,45 @@
+# Lab 03 — Preparatório para a prova prática: ISP
+
+## Fontes e objetivo
+
+- Enunciado do professor: `Exercício preparatorio para a prova pratica.pdf` (10 a 23/11/2026).
+- [Videoaula: criação e configuração de um ISP](https://www.youtube.com/watch?v=VdqleBOIbRE), 1h43min31s. A transcrição automática foi consultada; nomes e números ditados podem conter erros de reconhecimento.
+- Montar no Packet Tracer um ISP local e três empresas clientes, de modo que os sites dos clientes e do ISP possam ser acessados.
+
+Este é um projeto novo. Preserve os arquivos `.pkt` dos Labs 01 e 02. Salve a topologia deste trabalho neste diretório.
+
+## Escopo explícito do PDF
+
+| Organização | Rede | Bloco |
+|---|---|---|
+| ISP Conect | Matriz | `172.16.1.0/24` |
+| ISP Conect | Ligação com Show de Cacau | `172.16.2.0/30` |
+| ISP Conect | Ligação com Açaí Kids | `172.16.3.0/30` |
+| ISP Conect | Ligação com Mc Donuts | `172.16.4.0/30` |
+| Show de Cacau | Matriz | `192.168.1.0/24` |
+| Show de Cacau | Filial | `192.168.2.0/24` |
+| Show de Cacau | Ligação matriz–filial | `192.168.3.0/30` |
+| Açaí Kids | Matriz | `192.168.10.0/24` |
+| Mc Donuts | Matriz | `192.168.10.0/24` |
+| Mc Donuts | Filial 01 | `192.168.20.0/24` |
+| Mc Donuts | Ligação filial 01 | `192.168.30.0/24` |
+| Mc Donuts | Filial 02 | `192.168.40.0/24` |
+| Mc Donuts | Ligação filial 02 | `192.168.50.0/24` |
+
+O PDF mostra a topologia lógica das unidades e enlaces, mas não especifica quantidade de PCs, modelo dos roteadores, endereços individuais, domínios ou conteúdo dos sites. Essas decisões devem ser planejadas e registradas, sem atribuí-las ao enunciado.
+
+## Ambiguidades a resolver antes de interligar tudo
+
+1. **Sobreposição:** Açaí Kids e matriz Mc Donuts receberam o mesmo bloco `192.168.10.0/24`. Rotas IP comuns não conseguem distinguir duas redes remotas com o mesmo prefixo. Conferir com o professor se há erro no PDF ou se ele espera outra solução. Enquanto isso, montar as redes isoladamente e deixar a interligação dessas duas pendente.
+2. **Máscaras dos enlaces Mc Donuts:** o PDF usa `/24` para `192.168.30.0` e `192.168.50.0`, embora os enlaces entre dois roteadores possam usar `/30`. Seguir o PDF até haver esclarecimento; não alterar a máscara silenciosamente.
+3. **Vídeo como exemplo:** a aula usa nomes e endereços diferentes (ISP Fred, Burger Show e Bar do Tod). Aproveitar o método, mas usar os blocos do PDF para este trabalho.
+
+## Evidências de conclusão
+
+- Tabela de endereços e interfaces efetivamente usados.
+- IP, máscara, gateway e DNS conferidos nos hosts, inclusive após renovar DHCP quando houver mudanças.
+- Enlaces e rotas de ida e volta verificados por `ping` e `show ip route`.
+- Resolução dos domínios no DNS escolhido e páginas abertas por nome no navegador do Packet Tracer.
+- Caminho de uma consulta DNS e de uma requisição Web explicado, incluindo as respostas.
+
+Siga o [roteiro](study-path.md) e registre somente resultados observados em [notes.md](notes.md).
