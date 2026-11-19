@@ -1,5 +1,7 @@
 # Roteiro de prática — ISP
 
+**Estado:** etapas práticas concluídas segundo os testes relatados pelo estudante. O endereçamento usado, as evidências e a adaptação do bloco da Açaí estão em [notes.md](notes.md). Este roteiro permanece como sequência reproduzível do lab.
+
 Avance por evidências, sem necessidade de seguir um calendário. Primeiro monte um inventário textual; o desenho do Packet Tracer vem depois. Não reutilize o `.pkt` da WAN como trabalho final sem criar uma cópia independente.
 
 | Etapa | Trabalho | Evidência para avançar |

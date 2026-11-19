@@ -8,7 +8,7 @@ Topologia em [ISP Practical.pkt](ISP%20Practical.pkt). Os resultados abaixo fora
 - Enlaces e rotas entre matriz e filial Show, e entre matriz Mc e suas duas filiais, testados.
 - ISP interligado a Show, Açaí e Mc. Pings por IP entre o ISP e os clientes e entre as empresas relatados como funcionais.
 - DNS no ISP configurado para os quatro sites; DHCP dos clientes atualizado para usar o DNS do ISP. Acesso aos sites por nome entre empresas relatado como funcional. Páginas HTML personalizadas adicionadas aos servidores.
-- Após instalar outro módulo no roteador ISP sem antes salvar na NVRAM, os IPs seriais e as rotas estáticas desapareceram. O estudante identificou a falha por ping, `show ip interface brief` e `show ip route`, restaurou as portas e rotas e relatou que os testes voltaram a funcionar. Conferir o salvamento final na NVRAM.
+- Após instalar outro módulo no roteador ISP sem antes salvar na NVRAM, os IPs seriais e as rotas estáticas desapareceram. O estudante identificou a falha por ping, `show ip interface brief` e `show ip route`, restaurou as portas e rotas e relatou que os testes voltaram a funcionar. Depois, confirmou o salvamento na NVRAM.
 
 ## Decisão de endereçamento divergente do PDF
 
@@ -16,7 +16,7 @@ O PDF atribui `192.168.10.0/24` tanto à Açaí Kids quanto à matriz Mc Donuts.
 
 ## Endereçamento usado na sessão
 
-Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs individuais, início dos pools DHCP e domínios foram escolhidos para esta implementação. Os nomes exatos das interfaces físicas dos roteadores ainda precisam ser transcritos do Packet Tracer.
+Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs individuais, início dos pools DHCP e domínios foram escolhidos para esta implementação. As interfaces do ISP e da Açaí abaixo foram confirmadas nas capturas; as dos demais roteadores não foram transcritas.
 
 | Local | Rede LAN | Gateway | Servidor | DHCP a partir de | DNS entregue ao PC |
 |---|---|---|---|---|---|
@@ -36,6 +36,8 @@ Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs ind
 | ISP ↔ Show matriz | `172.16.2.0/30` | ISP `172.16.2.1` | Show `172.16.2.2` | Testado |
 | ISP ↔ Açaí Kids | `172.16.3.0/30` | ISP `172.16.3.1` | Açaí `172.16.3.2` | Testado |
 | ISP ↔ Mc matriz | `172.16.4.0/30` | ISP `172.16.4.1` | Mc `172.16.4.2` | Testado |
+
+Interfaces confirmadas por `show ip route`: ISP `GigabitEthernet0/0` → `172.16.1.1`, `Serial0/3/0` → `172.16.2.1` (Show), `Serial0/2/0` → `172.16.3.1` (Açaí), `Serial0/3/1` → `172.16.4.1` (Mc). Açaí `GigabitEthernet0/0` → `192.168.11.1` e `Serial0/3/0` → `172.16.3.2`.
 
 ## Serviços e testes relatados
 
@@ -64,4 +66,4 @@ Capturas do estudante de 18/11/2026 mostram:
 
 O estudante confirmou que salvou os roteadores na NVRAM e a versão final do `.pkt`. Os testes funcionais por IP e por nome foram relatados como concluídos. O arquivo do Packet Tracer foi salvo após a integração da Açaí.
 
-Para a revisão da prova: conferir IP, máscara, gateway e DNS de um PC; ler `show ip route` no ISP e em um cliente; explicar o caminho de uma consulta DNS e de uma requisição Web entre empresas, incluindo as respostas. Na entrega, informar a decisão de renumerar a Açaí e, se necessário, transcrever os nomes das interfaces físicas do `.pkt` para esta tabela.
+Para a revisão da prova: repetir a leitura de IP, máscara, gateway e DNS de um PC e de `show ip route` no ISP e em um cliente; explicar o caminho de uma consulta DNS e de uma requisição Web entre empresas, incluindo as respostas. Na entrega, informar a decisão de renumerar a Açaí.

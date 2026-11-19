@@ -6,7 +6,9 @@
 - [Videoaula: criação e configuração de um ISP](https://www.youtube.com/watch?v=VdqleBOIbRE), 1h43min31s. A transcrição automática foi consultada; nomes e números ditados podem conter erros de reconhecimento.
 - Montar no Packet Tracer um ISP local e três empresas clientes, de modo que os sites dos clientes e do ISP possam ser acessados.
 
-Este é um projeto novo. Preserve os arquivos `.pkt` dos Labs 01 e 02. Salve a topologia deste trabalho neste diretório.
+Este projeto é independente dos Labs 01 e 02; preserve os arquivos `.pkt` anteriores. Salve a topologia deste trabalho neste diretório.
+
+**Implementação:** a topologia concluída está em [ISP Practical.pkt](ISP%20Practical.pkt); o endereçamento efetivo, os resultados relatados e a revisão final estão em [notes.md](notes.md).
 
 ## Escopo explícito do PDF
 

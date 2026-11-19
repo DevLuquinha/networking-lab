@@ -6,9 +6,9 @@ Construir fundamentos de Redes aplicáveis a backend, Linux, infraestrutura, clo
 
 ## Sequência de projetos e prioridade atual
 
-Comece pelos três projetos práticos: [Lab 01: LAN](../labs/01-company-lan/assignment.md), [Lab 02: WAN Uberaba–Sacramento](../labs/02-company-wan/assignment.md) e [Lab 03: ISP preparatório para a prova](../labs/03-isp-practical/assignment.md). Os dois primeiros já foram aplicados. A prioridade atual é montar o ISP segundo o [roteiro em etapas](../labs/03-isp-practical/study-path.md), aproveitando o que foi aprendido sobre DHCP, DNS, gateways, enlaces `/30` e rotas.
+Os três projetos práticos já foram aplicados: [Lab 01: LAN](../labs/01-company-lan/assignment.md), [Lab 02: WAN Uberaba–Sacramento](../labs/02-company-wan/assignment.md) e [Lab 03: ISP preparatório para a prova](../labs/03-isp-practical/assignment.md). O ISP conecta os três clientes no Packet Tracer; [notas e evidências](../labs/03-isp-practical/notes.md) registram os testes, o diagnóstico de rotas perdidas após reinício e a decisão de usar `192.168.11.0/24` na Açaí Kids devido à sobreposição do PDF.
 
-Depois de concluir o Lab 03, aprofunde os mecanismos por trás dos projetos com o [Lab 04: Ethernet e ARP](../labs/04-ethernet-arp/assignment.md), o [Lab 05: sub-redes IPv4](../labs/05-ipv4-subnets/assignment.md) e os módulos abaixo. Se um fundamento for necessário durante o ISP, estude-o no contexto do projeto, sem transformar os labs posteriores em pré-requisitos.
+O próximo aprofundamento é o [Lab 04: Ethernet e ARP](../labs/04-ethernet-arp/assignment.md), seguido do [Lab 05: sub-redes IPv4](../labs/05-ipv4-subnets/assignment.md) e dos módulos abaixo. A aplicação de DHCP, DNS, gateways, enlaces e rotas nos projetos não substitui o estudo dos mecanismos internos nem comprova, por si só, domínio dos módulos.
 
 Os módulos abaixo seguem dependências conceituais para o aprofundamento após os três projetos, sem duração fixa. A sessão opcional de [pesquisa guiada](study-method.md) pode anteceder qualquer lab. Packet Tracer, Linux, Wireshark e `tcpdump` são usados ao longo do percurso; o módulo de diagnóstico em Linux consolida essas práticas antes de Docker.
 
