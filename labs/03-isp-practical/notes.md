@@ -23,7 +23,7 @@ Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs ind
 | ISP Conect | `172.16.1.0/24` | `172.16.1.1` | `172.16.1.2` | `172.16.1.100` | `172.16.1.2` |
 | Show matriz | `192.168.1.0/24` | `192.168.1.1` | `192.168.1.2` | `192.168.1.100` | `172.16.1.2` |
 | Show filial | `192.168.2.0/24` | `192.168.2.1` | `192.168.2.2` | `192.168.2.100` | `172.16.1.2` |
-| Açaí Kids | `192.168.11.0/24` | `192.168.11.1` | `192.168.11.2` | `192.168.11.100` | `172.16.1.2` |
+| Açaí Kids | `192.168.11.0/24` | `192.168.11.1` | `192.168.11.2` | Início do pool a conferir; PC recebeu `192.168.11.3` | `172.16.1.2` |
 | Mc matriz | `192.168.10.0/24` | `192.168.10.1` | `192.168.10.2` | `192.168.10.100` | `172.16.1.2` |
 | Mc Filial 01 | `192.168.20.0/24` | `192.168.20.1` | `192.168.20.2` | `192.168.20.100` | `172.16.1.2` |
 | Mc Filial 02 | `192.168.40.0/24` | `192.168.40.1` | `192.168.40.2` | `192.168.40.100` | `172.16.1.2` |
@@ -51,6 +51,14 @@ Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs ind
 | Açaí → sites do ISP, Show e Mc; Show e Mc → site da Açaí | Páginas abriram por nome após a integração ao DNS do ISP, segundo relato. |
 
 Registros DNS no ISP: `www.ispconect.com` → `172.16.1.2`, `www.showdecacau.com` → `192.168.1.2`, `www.mcdonuts.com` → `192.168.10.2`, `www.acaikids.com` → `192.168.11.2`.
+
+## Evidências da revisão final
+
+Capturas do estudante de 18/11/2026 mostram:
+
+- No ISP, `show ip route` lista como conectadas as redes `172.16.1.0/24`, `172.16.2.0/30`, `172.16.3.0/30` e `172.16.4.0/30`. Há rotas estáticas para `192.168.1.0/24`, `192.168.2.0/24`, `192.168.10.0/24`, `192.168.11.0/24`, `192.168.20.0/24` e `192.168.40.0/24`, com próximos saltos dos clientes correspondentes.
+- No roteador Açaí, `show ip route` lista `172.16.3.0/30` e `192.168.11.0/24` como conectadas e `S* 0.0.0.0/0 via 172.16.3.1` como rota padrão.
+- No PC da Açaí, `ipconfig /all` mostra `192.168.11.3/24`, gateway `192.168.11.1`, DHCP `192.168.11.2` e DNS `172.16.1.2`. O IP `.3` é válido nessa LAN, mas difere do início `.100` planejado; conferir o pool se for necessário reproduzir exatamente o plano.
 
 ## Fechamento e revisão
 
