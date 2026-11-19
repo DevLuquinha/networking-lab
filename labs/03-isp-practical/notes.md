@@ -6,9 +6,9 @@ Topologia em [ISP Practical.pkt](ISP%20Practical.pkt). Os resultados abaixo fora
 
 - LANs locais montadas: ISP Conect, Show de Cacau matriz e filial, Açaí Kids, Mc Donuts matriz e duas filiais.
 - Enlaces e rotas entre matriz e filial Show, e entre matriz Mc e suas duas filiais, testados.
-- ISP interligado a Show e Mc. Pings por IP entre essas redes e entre as duas empresas relatados como funcionais.
-- DNS no ISP configurado para os sites do ISP, Show e Mc; DHCP desses clientes atualizado para usar o DNS do ISP. Acesso aos sites por nome entre empresas relatado como funcional. Páginas HTML personalizadas adicionadas aos servidores.
-- Açaí Kids renumerada e testada **localmente**; seu enlace com o ISP, as rotas e o registro no DNS central ainda não foram configurados.
+- ISP interligado a Show, Açaí e Mc. Pings por IP entre o ISP e os clientes e entre as empresas relatados como funcionais.
+- DNS no ISP configurado para os quatro sites; DHCP dos clientes atualizado para usar o DNS do ISP. Acesso aos sites por nome entre empresas relatado como funcional. Páginas HTML personalizadas adicionadas aos servidores.
+- Após instalar outro módulo no roteador ISP sem antes salvar na NVRAM, os IPs seriais e as rotas estáticas desapareceram. O estudante identificou a falha por ping, `show ip interface brief` e `show ip route`, restaurou as portas e rotas e relatou que os testes voltaram a funcionar. Conferir o salvamento final na NVRAM.
 
 ## Decisão de endereçamento divergente do PDF
 
@@ -23,7 +23,7 @@ Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs ind
 | ISP Conect | `172.16.1.0/24` | `172.16.1.1` | `172.16.1.2` | `172.16.1.100` | `172.16.1.2` |
 | Show matriz | `192.168.1.0/24` | `192.168.1.1` | `192.168.1.2` | `192.168.1.100` | `172.16.1.2` |
 | Show filial | `192.168.2.0/24` | `192.168.2.1` | `192.168.2.2` | `192.168.2.100` | `172.16.1.2` |
-| Açaí Kids | `192.168.11.0/24` | `192.168.11.1` | `192.168.11.2` | `192.168.11.100` | `192.168.11.2` |
+| Açaí Kids | `192.168.11.0/24` | `192.168.11.1` | `192.168.11.2` | `192.168.11.100` | `172.16.1.2` |
 | Mc matriz | `192.168.10.0/24` | `192.168.10.1` | `192.168.10.2` | `192.168.10.100` | `172.16.1.2` |
 | Mc Filial 01 | `192.168.20.0/24` | `192.168.20.1` | `192.168.20.2` | `192.168.20.100` | `172.16.1.2` |
 | Mc Filial 02 | `192.168.40.0/24` | `192.168.40.1` | `192.168.40.2` | `192.168.40.100` | `172.16.1.2` |
@@ -34,7 +34,7 @@ Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs ind
 | Mc matriz ↔ Filial 01 | `192.168.30.0/24` | Matriz `192.168.30.1` | Filial `192.168.30.2` | Testado |
 | Mc matriz ↔ Filial 02 | `192.168.50.0/24` | Matriz `192.168.50.1` | Filial `192.168.50.2` | Testado |
 | ISP ↔ Show matriz | `172.16.2.0/30` | ISP `172.16.2.1` | Show `172.16.2.2` | Testado |
-| ISP ↔ Açaí Kids | `172.16.3.0/30` | Pendente | Pendente | Não montado |
+| ISP ↔ Açaí Kids | `172.16.3.0/30` | ISP `172.16.3.1` | Açaí `172.16.3.2` | Testado |
 | ISP ↔ Mc matriz | `172.16.4.0/30` | ISP `172.16.4.1` | Mc `172.16.4.2` | Testado |
 
 ## Serviços e testes relatados
@@ -47,11 +47,13 @@ Os endereços de rede vêm do PDF, exceto a LAN renumerada da Açaí. Os IPs ind
 | ISP ↔ Show e ISP ↔ Mc, incluindo suas filiais | Pings por IP funcionaram nos dois sentidos, segundo relato. |
 | Show ↔ Mc através do ISP | Pings por IP funcionaram, segundo relato. |
 | Sites do ISP, Show e Mc por nome entre empresas | Funcionaram após registros DNS no ISP, atualização dos pools DHCP e renovação dos PCs, segundo relato. |
+| Açaí ↔ ISP e Mc | Pings por IP funcionaram nos dois sentidos testados, segundo relato. |
+| Açaí → sites do ISP, Show e Mc; Show e Mc → site da Açaí | Páginas abriram por nome após a integração ao DNS do ISP, segundo relato. |
 
-Registros DNS usados: `www.ispconect.com` → `172.16.1.2`, `www.showdecacau.com` → `192.168.1.2`, `www.mcdonuts.com` → `192.168.10.2`. Na Açaí, o DNS local resolve `www.acaikids.com` → `192.168.11.2`; o registro ainda não foi adicionado ao DNS do ISP.
+Registros DNS no ISP: `www.ispconect.com` → `172.16.1.2`, `www.showdecacau.com` → `192.168.1.2`, `www.mcdonuts.com` → `192.168.10.2`, `www.acaikids.com` → `192.168.11.2`.
 
-## Próximo passo e revisão
+## Fechamento e revisão
 
-1. Conectar a Açaí ao ISP por `172.16.3.0/30`, configurar rotas de ida e retorno e testar por IP.
-2. Adicionar `www.acaikids.com` → `192.168.11.2` ao DNS do ISP, atualizar o DNS no DHCP da Açaí, renovar o PC e testar sites por nome entre todas as empresas.
-3. Conferir IP, máscara, gateway e DNS dos hosts; registrar nomes das interfaces, `show ip route` dos roteadores e testes finais. Salvar o `.pkt`.
+O estudante confirmou que salvou os roteadores na NVRAM e a versão final do `.pkt`. Os testes funcionais por IP e por nome foram relatados como concluídos. O arquivo do Packet Tracer foi salvo após a integração da Açaí.
+
+Para a revisão da prova: conferir IP, máscara, gateway e DNS de um PC; ler `show ip route` no ISP e em um cliente; explicar o caminho de uma consulta DNS e de uma requisição Web entre empresas, incluindo as respostas. Na entrega, informar a decisão de renumerar a Açaí e, se necessário, transcrever os nomes das interfaces físicas do `.pkt` para esta tabela.
