@@ -28,10 +28,10 @@ Este é um projeto novo. Preserve os arquivos `.pkt` dos Labs 01 e 02. Salve a t
 
 O PDF mostra a topologia lógica das unidades e enlaces, mas não especifica quantidade de PCs, modelo dos roteadores, endereços individuais, domínios ou conteúdo dos sites. Essas decisões devem ser planejadas e registradas, sem atribuí-las ao enunciado.
 
-## Ambiguidades a resolver antes de interligar tudo
+## Ambiguidades do enunciado e decisão do estudante
 
-1. **Sobreposição:** Açaí Kids e matriz Mc Donuts receberam o mesmo bloco `192.168.10.0/24`. Rotas IP comuns não conseguem distinguir duas redes remotas com o mesmo prefixo. Conferir com o professor se há erro no PDF ou se ele espera outra solução. Enquanto isso, montar as redes isoladamente e deixar a interligação dessas duas pendente.
-2. **Máscaras dos enlaces Mc Donuts:** o PDF usa `/24` para `192.168.30.0` e `192.168.50.0`, embora os enlaces entre dois roteadores possam usar `/30`. Seguir o PDF até haver esclarecimento; não alterar a máscara silenciosamente.
+1. **Sobreposição:** Açaí Kids e matriz Mc Donuts receberam o mesmo bloco `192.168.10.0/24`. Rotas IP comuns não conseguem distinguir duas redes remotas com o mesmo prefixo. Para a implementação, o estudante decidiu **manter `192.168.10.0/24` na Mc Donuts e usar `192.168.11.0/24` na Açaí Kids**, registrando essa divergência para explicar ao professor na entrega. A tabela acima preserva os blocos originais do PDF.
+2. **Máscaras dos enlaces Mc Donuts:** o PDF usa `/24` para `192.168.30.0` e `192.168.50.0`, embora os enlaces entre dois roteadores possam usar `/30`. A implementação manteve `/24`, conforme o PDF.
 3. **Vídeo como exemplo:** a aula usa nomes e endereços diferentes (ISP Fred, Burger Show e Bar do Tod). Aproveitar o método, mas usar os blocos do PDF para este trabalho.
 
 ## Evidências de conclusão
