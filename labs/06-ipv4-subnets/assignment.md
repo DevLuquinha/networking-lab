@@ -1,4 +1,4 @@
-# Lab 05 — IPv4, máscara e sub-redes
+# Lab 06 — IPv4, máscara e sub-redes
 
 ## Pergunta do laboratório
 

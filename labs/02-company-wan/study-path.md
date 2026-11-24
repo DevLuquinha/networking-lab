@@ -12,7 +12,7 @@ Avance **uma etapa por vez** com o mentor. Antes de cada etapa, você pode pedir
 | 6. Validar DNS e Web | Confirmar que o DHCP da filial entrega o endereço do DNS da matriz. Testar resolução de nome antes de abrir HTTP/HTTPS; separar falha de IP, DNS e aplicação. | Nome resolve para o Web correto e a página abre da filial; resultados registrados por departamento. |
 | 7. Explicar e entregar | Revisar testes de todos os departamentos, salvar o `.pkt` e descrever o trajeto de uma consulta DNS e de uma requisição Web, inclusive a resposta. | Matriz de evidências completa, topologia salva e explicação própria do caminho dos pacotes. |
 
-Os Labs [04: Ethernet e ARP](../04-ethernet-arp/assignment.md) e [05: sub-redes IPv4](../05-ipv4-subnets/assignment.md) aprofundam esses fundamentos após os três projetos iniciais. A teoria necessária pode ser retomada no momento em que for usada.
+Após o [Lab 04: simulado da prova prática](../04-practical-exam/assignment.md), os Labs [05: Ethernet e ARP](../05-ethernet-arp/assignment.md) e [06: sub-redes IPv4](../06-ipv4-subnets/assignment.md) aprofundam esses fundamentos. A teoria necessária pode ser retomada no momento em que for usada.
 
 ## Como começar a Etapa 1
 

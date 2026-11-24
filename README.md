@@ -9,7 +9,7 @@ Este repositório guarda o plano e as evidências de aprendizado. Não há agend
 1. Leia o [roadmap](docs/roadmap.md) para entender a ordem e os critérios de avanço.
 2. Escolha no [método de estudo](docs/study-method.md) se quer começar o módulo com pesquisa guiada ou seguir para a explicação e o laboratório.
 3. A sequência inicial foi [Lab 01: LAN](labs/01-company-lan/assignment.md), [Lab 02: WAN Uberaba–Sacramento](labs/02-company-wan/assignment.md) e [Lab 03: ISP preparatório para a prova prática](labs/03-isp-practical/assignment.md). Os três foram aplicados no Packet Tracer; o [Lab 03](labs/03-isp-practical/notes.md) reúne endereçamento, testes e a decisão de renumerar a Açaí Kids.
-4. O próximo aprofundamento é o [Lab 04: Ethernet e ARP](labs/04-ethernet-arp/assignment.md), seguido do [Lab 05: sub-redes IPv4](labs/05-ipv4-subnets/assignment.md) e dos módulos do roadmap. Antes da prova prática, revisite as evidências do Lab 03.
+4. O [Lab 04: simulado da prova prática](labs/04-practical-exam/assignment.md) está preparado para uma tentativa nova quando você quiser começar. Antes dela, revisite as evidências do Lab 03. Depois, aprofunde os fundamentos no [Lab 05: Ethernet e ARP](labs/05-ethernet-arp/assignment.md) e no [Lab 06: sub-redes IPv4](labs/06-ipv4-subnets/assignment.md).
 5. Registre descobertas, dúvidas e evidências em [progresso](docs/progress.md). O registro representa o que você confirmou.
 
 ## Como os labs funcionam
